@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsh-Wq-uNG">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsh-Wq-uNG">
                                 <rect key="frame" x="174" y="114" width="252" height="201"/>
                                 <state key="normal" title="Send Ping">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -28,7 +28,7 @@
                                     <action selector="handleSendPingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6E-b4-7QA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No action requested" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmT-o7-L47">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="No action requested" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmT-o7-L47">
                                 <rect key="frame" x="222" y="362" width="156" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -37,7 +37,7 @@
                                     <rect key="frame" x="122" y="84" width="156" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="127.0.0.1" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mTi-Ld-yzc">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="127.0.0.1" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mTi-Ld-yzc">
                                 <rect key="frame" x="174" y="53" width="252" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -54,8 +54,6 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Xsh-Wq-uNG" secondAttribute="centerX" id="1o7-oX-vJY"/>
                             <constraint firstItem="XmT-o7-L47" firstAttribute="top" secondItem="Xsh-Wq-uNG" secondAttribute="bottom" constant="47" id="BTm-ak-eXV"/>
-                            <constraint firstItem="Xsh-Wq-uNG" firstAttribute="top" secondItem="mTi-Ld-yzc" secondAttribute="bottom" constant="31" id="BoR-Sk-5U4"/>
-                            <constraint firstItem="mTi-Ld-yzc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="I7z-Og-toj"/>
                             <constraint firstItem="9yG-Me-8ye" firstAttribute="top" secondItem="XmT-o7-L47" secondAttribute="bottom" constant="30.5" id="IB4-pi-PiK"/>
                             <constraint firstAttribute="centerX" secondItem="XmT-o7-L47" secondAttribute="centerX" id="Woc-5m-KfW"/>
                             <constraint firstAttribute="centerX" secondItem="9yG-Me-8ye" secondAttribute="centerX" id="o79-gL-iLg"/>
