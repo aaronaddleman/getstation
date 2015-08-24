@@ -16,8 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsh-Wq-uNG">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="127.0.0.1" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mTi-Ld-yzc">
+                                <rect key="frame" x="174" y="53" width="252" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Nothing requested at this junture." translatesAutoresizingMaskIntoConstraints="NO" id="9yG-Me-8ye" userLabel="Results Box">
+                                <rect key="frame" x="180" y="347" width="240" height="194"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="TXc-tu-Imk"/>
+                                    <constraint firstAttribute="width" constant="240" id="b2X-Yg-xY6"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="194" id="zVW-Ly-vdd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsh-Wq-uNG">
                                 <rect key="frame" x="174" y="114" width="252" height="201"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="1nj-LI-fwR"/>
+                                    <constraint firstAttribute="height" constant="201" id="vqt-pZ-DvG"/>
+                                </constraints>
                                 <state key="normal" title="Send Ping">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,34 +48,15 @@
                                     <action selector="handleSendPingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6E-b4-7QA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="No action requested" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmT-o7-L47">
-                                <rect key="frame" x="222" y="362" width="156" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="122" y="84" width="156" height="21"/>
-                                </variation>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="127.0.0.1" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mTi-Ld-yzc">
-                                <rect key="frame" x="174" y="53" width="252" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9yG-Me-8ye">
-                                <rect key="frame" x="180" y="413" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Xsh-Wq-uNG" secondAttribute="centerX" id="1o7-oX-vJY"/>
-                            <constraint firstItem="XmT-o7-L47" firstAttribute="top" secondItem="Xsh-Wq-uNG" secondAttribute="bottom" constant="47" id="BTm-ak-eXV"/>
-                            <constraint firstItem="9yG-Me-8ye" firstAttribute="top" secondItem="XmT-o7-L47" secondAttribute="bottom" constant="30.5" id="IB4-pi-PiK"/>
-                            <constraint firstAttribute="centerX" secondItem="XmT-o7-L47" secondAttribute="centerX" id="Woc-5m-KfW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9yG-Me-8ye" secondAttribute="bottom" constant="59" id="3YX-C5-Hah"/>
+                            <constraint firstItem="Xsh-Wq-uNG" firstAttribute="leading" secondItem="mTi-Ld-yzc" secondAttribute="leading" id="CYm-dq-oeK"/>
+                            <constraint firstAttribute="centerX" secondItem="9yG-Me-8ye" secondAttribute="centerX" id="X1v-hb-2cT"/>
+                            <constraint firstItem="Xsh-Wq-uNG" firstAttribute="top" secondItem="mTi-Ld-yzc" secondAttribute="bottom" constant="31" id="bmd-2c-7sT"/>
+                            <constraint firstItem="9yG-Me-8ye" firstAttribute="top" secondItem="Xsh-Wq-uNG" secondAttribute="bottom" constant="32" id="fEq-dd-NaK"/>
                             <constraint firstAttribute="centerX" secondItem="9yG-Me-8ye" secondAttribute="centerX" id="o79-gL-iLg"/>
                             <constraint firstAttribute="centerX" secondItem="mTi-Ld-yzc" secondAttribute="centerX" id="v7Q-8r-RjK"/>
                         </constraints>
